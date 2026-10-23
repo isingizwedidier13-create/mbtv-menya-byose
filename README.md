@@ -4,151 +4,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MBTV MENYA BYOSE | Imyidagaduro</title>
-  <meta name="description" content="MBTV MENYA BYOSE - Amakuru y'imyidagaduro mu Rwanda, muri Afurika no ku isi.">
+  <meta name="description" content="MBTV MENYA BYOSE - Amakuru y'imyidagaduro, umuziki n'ibyamamare mu Rwanda no ku isi.">
+  <title>MBTV MENYA BYOSE | Amakuru y'imyidagaduro</title>
   <style>
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f2f6fc;
-      color: #111827;
+      background: #f2f4f8;
+      color: #20232a;
     }
     header {
-      background: linear-gradient(120deg, #020817, #075bea);
+      background: #071b36;
       color: white;
       text-align: center;
-      padding: 35px 15px;
+      padding: 28px 12px;
+      border-bottom: 5px solid #f4b400;
     }
-    header h1 { margin: 0; font-size: clamp(28px, 5vw, 46px); }
-    header p { color: #67e8f9; letter-spacing: 2px; }
+    header h1 { margin: 0; font-size: clamp(27px, 5vw, 43px); }
+    header p { margin-bottom: 0; }
     nav {
-      background: #06152d;
-      padding: 14px;
-      text-align: center;
+      background: #102d52;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 12px;
     }
     nav a {
       color: white;
       text-decoration: none;
-      margin: 7px 12px;
-      display: inline-block;
+      padding: 10px 12px;
       font-weight: bold;
     }
-    .breaking {
-      background: #075bea;
+    nav a:hover { background: #f4b400; color: #071b36; }
+    .hero {
+      background: linear-gradient(135deg, #071b36, #1766a5);
       color: white;
-      padding: 13px 18px;
-      font-weight: bold;
+      text-align: center;
+      padding: 55px 18px;
     }
-    main { max-width: 1050px; margin: auto; padding: 22px 15px; }
-    .intro {
-      background: white;
-      border-radius: 12px;
-      padding: 25px;
-      border-left: 5px solid #078cff;
+    .hero h2 { font-size: 32px; margin-top: 0; }
+    .hero p { line-height: 1.7; }
+    .container { max-width: 1100px; margin: auto; padding: 22px 15px; }
+    .section-title {
+      border-left: 5px solid #f4b400;
+      padding-left: 12px;
+      color: #071b36;
     }
-    h2 { color: #075bea; }
-    .grid {
+    .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 18px;
     }
-    article {
+    .card {
       background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 3px 12px #00000010;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px #00000012;
     }
-    article .tag { color: #075bea; font-weight: bold; font-size: 13px; }
-    article h3 { line-height: 1.4; }
-    article p { color: #4b5563; line-height: 1.6; }
-    .contact {
+    .card-top {
+      background: #dce8f5;
+      min-height: 125px;
+      display: grid;
+      place-items: center;
+      font-size: 42px;
+    }
+    .card-content { padding: 17px; }
+    .card h3 { color: #102d52; margin-top: 0; }
+    .card p { line-height: 1.6; }
+    .tag { color: #9b6900; font-weight: bold; font-size: 13px; }
+    .about, .contact {
+      background: white;
+      padding: 22px;
+      border-radius: 10px;
       margin-top: 25px;
-      background: #06152d;
+      line-height: 1.8;
+    }
+    .socials { display: flex; flex-wrap: wrap; gap: 12px; }
+    .socials a {
+      background: #102d52;
       color: white;
-      padding: 25px;
-      border-radius: 12px;
+      padding: 12px 16px;
+      text-decoration: none;
+      border-radius: 6px;
     }
     footer {
-      text-align: center;
-      padding: 22px;
-      background: #020817;
+      background: #071b36;
       color: white;
+      text-align: center;
+      padding: 22px 12px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>MBTV MENYA BYOSE</h1>
-    <p>AMAKURU • IMYIDAGADURO • UBUTUMWA BWIZA</p>
-    <span>Entertainment News in Rwanda, Africa and the World</span>
-  </header>
 
-  <nav>
-    <a href="#home">Ahabanza / Home</a>
-    <a href="#rwanda">Rwanda</a>
-    <a href="#africa">Africa & World</a>
-    <a href="#music">Umuziki / Music</a>
-    <a href="#contact">Twandikire / Contact</a>
-  </nav>
+<header id="home">
+  <h1>MBTV MENYA BYOSE</h1>
+  <p>Menya amakuru mashya. Menya ibigezweho.</p>
+</header>
 
-  <div class="breaking">
-    MBTV MENYA BYOSE — Menya amakuru, ugume ku gihe!
-  </div>
+<nav>
+  <a href="#home">Ahabanza</a>
+  <a href="#rwanda">Mu Rwanda</a>
+  <a href="#music">Umuziki</a>
+  <a href="#africa">Afurika & Isi</a>
+  <a href="#about">Abo turi bo</a>
+  <a href="#contact">Twandikire</a>
+</nav>
 
-  <main id="home">
-    <section class="intro">
-      <h2>Murakaza neza kuri MBTV MENYA BYOSE!</h2>
-      <p>
-        Aha ni ho muzajya musanga amakuru y'imyidagaduro,
-        abahanzi, indirimbo nshya, ibitaramo n'impano nshya.
-      </p>
-      <p>
-        Welcome to MBTV MENYA BYOSE — your destination for
-        entertainment news from Rwanda, Africa and around the world.
-      </p>
-    </section>
+<section class="hero">
+  <h2>IKAZE KURI MBTV MENYA BYOSE</h2>
+  <p>Urubuga rwanyu rw'amakuru y'imyidagaduro, abahanzi,<br>
+  indirimbo, ibyamamare n'ibigezweho mu Rwanda no ku isi.</p>
+</section>
 
-    <h2 id="rwanda">Imyidagaduro mu Rwanda / Rwanda Entertainment</h2>
-    <section class="grid">
-      <article>
-        <span class="tag">ABAHANZI / ARTISTS</span>
-        <h3>Menya amakuru y'abahanzi</h3>
-        <p>
-          Aha tuzajya dutangaza inkuru z'abahanzi, ibikorwa byabo
-          n'amakuru mashya yemejwe.
-        </p>
+<main class="container">
+  <section id="rwanda">
+    <h2 class="section-title">Amakuru yo mu Rwanda</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="card-top">🇷🇼</div>
+        <div class="card-content">
+          <span class="tag">IMYIDAGADURO</span>
+          <h3>Amakuru mashya mu Rwanda</h3>
+          <p>Aha tuzajya tubagezaho amakuru y'abahanzi, ibitaramo n'ibindi bigezweho.</p>
+        </div>
       </article>
-      <article id="music">
-        <span class="tag">UMUZIKI / MUSIC</span>
-        <h3>Indirimbo nshya / New Music</h3>
-        <p>
-          Kumenya indirimbo nshya, albums, amashusho y'indirimbo
-          n'impano z'abahanzi bakizamuka.
-        </p>
+      <article class="card">
+        <div class="card-top">🎤</div>
+        <div class="card-content">
+          <span class="tag">IBYAMAMARE</span>
+          <h3>Menya ibyamamare</h3>
+          <p>Inkuru, ibiganiro n'amakuru ajyanye n'abahanzi n'abandi bantu bazwi.</p>
+        </div>
       </article>
-      <article id="africa">
-        <span class="tag">AFURIKA N'ISI / AFRICA & WORLD</span>
-        <h3>Imyidagaduro mpuzamahanga</h3>
-        <p>
-          Amakuru y'imyidagaduro muri Afurika no ku isi,
-          ashingiye ku makuru yizewe.
-        </p>
+    </div>
+  </section>
+
+  <section id="music">
+    <h2 class="section-title">Umuziki</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="card-top">🎵</div>
+        <div class="card-content">
+          <span class="tag">MUSIC NEWS</span>
+          <h3>Indirimbo nshya</h3>
+          <p>Tuzajya tubagezaho amakuru y'indirimbo nshya, abahanzi n'ibikorwa byabo.</p>
+        </div>
       </article>
-    </section>
+      <article class="card">
+        <div class="card-top">🎬</div>
+        <div class="card-content">
+          <span class="tag">VIDEOS</span>
+          <h3>Amashusho n'ibiganiro</h3>
+          <p>Aha hazajya hongerwamo amashusho n'ibiganiro bya MBTV MENYA BYOSE.</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-    <section class="contact" id="contact">
-      <h2 style="color:#67e8f9">Twandikire / Contact Us</h2>
-      <p>Ufite inkuru cyangwa amakuru y'imyidagaduro? Turandikire.</p>
-      <p>Have entertainment news to share? Get in touch with our team.</p>
-      <p>Email: <a style="color:#67e8f9" href="mailto:mbtvmenyabyose@gmail.com">Twandikire kuri email</a></p>
-      <p>Social media: Shyiraho links za konti za MBTV MENYA BYOSE.</p>
-    </section>
-  </main>
+  <section id="africa">
+    <h2 class="section-title">Afurika n'Isi</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="card-top">🌍</div>
+        <div class="card-content">
+          <span class="tag">AFRICA & WORLD</span>
+          <h3>Amakuru mpuzamahanga</h3>
+          <p>Inkuru z'imyidagaduro, umuziki n'ibyamamare byo muri Afurika no ku isi.</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2026 MBTV MENYA BYOSE. All rights reserved.</p>
-    <p>Amakuru yizewe. Imyidagaduro igezweho.</p>
-  </footer>
+  <section class="about" id="about">
+    <h2 class="section-title">Abo turi bo</h2>
+    <p>MBTV MENYA BYOSE ni urubuga rugamije kugeza ku bakunzi bacu amakuru y'imyidagaduro, umuziki, ibyamamare n'ibindi bigezweho. Intego yacu ni ukubagezaho amakuru asobanutse kandi ku gihe.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Dukurikire kandi utwandikire</h2>
+    <p>Ushaka kutugezaho inkuru, amakuru cyangwa ubufatanye? Twandikire ukoresheje imbuga zacu.</p>
+    <div class="socials">
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+    </div>
+    <p><strong>Email:</strong> mbtvmenyabyose@gmail.com</p>
+    <p><em>Hindura email niba utarayifungura cyangwa atari yo ukoresha.</em></p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 MBTV MENYA BYOSE. Uburenganzira bwose burabitswe.</p>
+  <p>Amakuru y'imyidagaduro mu Rwanda no ku isi.</p>
+</footer>
+
 </body>
 </html>
